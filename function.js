@@ -65,11 +65,17 @@ let clearInput = () => {
     log(`Masukkan ${secondNum} ke variabel secondNum`);
     let out = new calculate(firstNum, operator, secondNum);
     let hasil = out.result();
-    // Ubah hasil menjadi exponensial jika melebihi 15 digit
-    if (String(hasil).length > 15) {
+    // Ubah angka setelah desimal menjadi 3 jika panjang hasil >= 15 
+    if (hasil % 1 != 0 && String(hasil).length >= 15) {
+      log(`Ubah angka desimal dari ${hasil} menjadi 3 jika hasil >= 15 digit`);
+      let x = Math.round(hasil * 10000000000) / 10000000000;
+      hasil = x;
+    }
+    // Ubah hasil menjadi exponensial jika >= 15 digit
+    if (String(hasil).length >= 15) {
       let temp = hasil.toExponential(3);
       hasil = temp;
-      log(`Ubah ${hasil} menjadi exponensial jika angka >= 15 digit`);
+      log(`Ubah ${hasil} menjadi exponensial jika hasil >= 15 digit`);
       exp = true;
     } 
     // Simpan kalkulasi ke dalam history

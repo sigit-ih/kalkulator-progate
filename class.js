@@ -12,19 +12,19 @@ class calculate {
       if (this.operator == "+") {
         out = this.firstNumber + this.secondNumber;
         log(`output result : ${out}`);
-        return Math.round(out * 1000) / 1000;
+        return out;
       } else if (this.operator == "-") {
         out = this.firstNumber - this.secondNumber;
         log(`output result : ${out}`);
-        return Math.round(out * 1000) / 1000;
+        return out;
       } else if (this.operator == "*") {
         out = this.firstNumber * this.secondNumber;
         log(`output result : ${out}`);
-        return Math.round(out * 1000) / 1000;
+        return out;
       } else if (this.operator == "/") {
         out = this.firstNumber / this.secondNumber;
         log(`output result : ${out}`);
-        return Math.round(out * 1000) / 1000;
+        return out;
       } else {
         // Jika operator tidak ada
         out = undefined;
