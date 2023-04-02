@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="kalkulator.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <title>Sigit Ispramono Hadi | Kalkulator </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="submit" id="panel" value="0"></input>
+        <button class="double" onclick="clickBtn(this)" value="AC">AC</button>
+        <button class="single" onclick="clickBtn(this)" value="%">%</button>
+        <button class="operation" onclick="clickBtn(this)" value="/">÷</button>
+        <button class="single" onclick="clickBtn(this)" value="7">7</button>
+        <button class="single" onclick="clickBtn(this)" value="8">8</button>
+        <button class="single" onclick="clickBtn(this)" value="9">9</button>
+        <button class="operation" onclick="clickBtn(this)" value="*">x</button>
+        <button class="single" onclick="clickBtn(this)" value="4">4</button>
+        <button class="single" onclick="clickBtn(this)" value="5">5</button>
+        <button class="single" onclick="clickBtn(this)" value="6">6</button>
+        <button class="operation" onclick="clickBtn(this)" value="-">-</button>
+        <button class="single" onclick="clickBtn(this)" value="1">1</button>
+        <button class="single" onclick="clickBtn(this)" value="2">2</button>
+        <button class="single" onclick="clickBtn(this)" value="3">3</button>
+        <button class="operation" onclick="clickBtn(this)" value="+">+</button>
+        <button class="double" onclick="clickBtn(this)" value="0">0</button>
+        <button class="single" onclick="clickBtn(this)" value=".">.</button>
+        <button class="operation" onclick="clickBtn(this)" value="=">=</button>
+      </div>
+    </div>
+    <script src="function.js"></script>
+    <script src="class.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

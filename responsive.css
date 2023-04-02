@@ -1,0 +1,54 @@
+@media (min-width:20em) /* Smartphones, iPhone, portrait 480x320 phones 320px 20em */ { 
+  * {
+    font-size: 75%;
+  }
+
+  .calculator {
+    width: 80%;
+  }
+}
+@media (min-width:30em) /* Portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. 481px 30em */ {  
+  * {
+    font-size: 80%;
+  }
+
+  .calculator {
+    width: 60%;
+  }
+}
+@media (min-width:40em) /* Portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones 641px 40em */ {  
+  * {
+    font-size: 85%;
+  }
+
+  .calculator {
+    width: 50%;
+  }
+}
+@media (min-width:60em) /* Tablet, landscape iPad, lo-res laptops ands desktops 961px 60em */ {  
+  * {
+    font-size: 100%;
+  }
+
+  .calculator {
+    width: 40%;
+  }
+}
+@media (min-width:64em) /* Big landscape tablets, laptops, and desktops 1025px 64em */ {  
+  * {
+    font-size: 100%;
+  }
+
+  .calculator {
+    width: 25%;
+  }
+}
+@media (min-width:80em) /* Hi-res laptops and desktops 1281px 80em*/ {  
+  * {
+    font-size: 100%;
+  }
+
+  .calculator {
+    width: 25%;
+  }
+}
